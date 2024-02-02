@@ -45,5 +45,6 @@ void Chessboard::rotateChessboard(cv::Mat image, cv::Mat rotImage, int alpha) {
     cv::Mat rotMatrix = cv::getRotationMatrix2D(center, alpha, 1.0);
     cv::warpAffine(image, rotImage, rotMatrix, image.size());
     //cv::warpAffine(image, rotImage, rotMatrix, image.size(), cv::INTER_LINEAR);
+    
 }
 
